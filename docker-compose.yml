@@ -16,12 +16,10 @@ services:
     volumes:
       - soccer-db:/var/lib/mysql
   mongo:
-    image: mongo
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: root
-      MONGO_INITDB_ROOT_PASSWORD: root
+    image: mongo:5
+    command: ["mongod", "--bind_ip_all"]
     ports:
-      - "27017:27017"
+      - '27017:27017'
     volumes:
       - soccer-db:/var/lib/mongodb
 volumes:
