@@ -1,5 +1,6 @@
 package me.ghisiluizgustavo.tournaments.services
 
+import me.ghisiluizgustavo.tournaments.controllers.requests.TournamentRequest
 import me.ghisiluizgustavo.tournaments.document.Tournament
 import me.ghisiluizgustavo.tournaments.repositories.TournamentRepository
 import org.bson.types.ObjectId
@@ -16,6 +17,10 @@ class TournamentService(val tournamentRepository: TournamentRepository) {
 
     fun getById(id: String): Mono<Tournament> {
         return tournamentRepository.findById(ObjectId(id))
+    }
+
+    fun create(tournamentRequest: TournamentRequest) {
+        tournamentRepository.save(tournamentRequest.toEntity())
     }
 
 }
