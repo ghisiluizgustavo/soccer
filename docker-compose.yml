@@ -1,7 +1,7 @@
 version: '3.3'
 
 services:
-  db:
+  mysql:
     image: mysql:5.7
     restart: always
     environment:
@@ -15,5 +15,12 @@ services:
       - '3306'
     volumes:
       - soccer-db:/var/lib/mysql
+  mongo:
+    image: mongo:5
+    command: ["mongod", "--bind_ip_all"]
+    ports:
+      - '27017:27017'
+    volumes:
+      - soccer-db:/var/lib/mongodb
 volumes:
   soccer-db:

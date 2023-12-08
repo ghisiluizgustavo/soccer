@@ -4,63 +4,96 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eae64af-52c5-4769-ad98-c9e57ba2be7a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/.github/workflows/ci-cd.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/SoccerApiApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/config/converters/player/PlayerToRecordConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/config/converters/player/RecordToPlayerConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/config/converters/team/RecordToTeamConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/config/converters/team/TeamToRecordConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/controller/PlayerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/controller/TeamController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/controller/resource/PlayerResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/controller/resource/TeamResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/exceptions/ExceptionAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/exceptions/NotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/model/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/model/Team.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/model/record/PlayerRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/model/record/TeamRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/repositories/PlayerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/repositories/TeamRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/services/PlayerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/java/me/ghisiluizgustavo/soccerapi/services/TeamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/main/resources/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soccer-api/src/test/java/me/ghisiluizgustavo/soccerapi/SoccerApiApplicationTests.java" afterDir="false" />
+    <list default="true" id="5eae64af-52c5-4769-ad98-c9e57ba2be7a" name="Changes" comment="(feat): starting tournaments ms, with Kotlin and Mongo">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/tournaments">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Class" />
+        <option value="Kotlin Data Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="tournaments" />
+                    <option name="lastUsedInstant" value="1697316993" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1697316574" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1697318774" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/tournaments" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2WlnCgKzZoo1QeevF8qSmQcWHvg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -73,9 +106,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "tournaments",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "last_opened_file_path": "C:/workspaces/soccer/soccer-api",
+    "last_opened_file_path": "C:/workspaces/soccer/tournaments/src/main/kotlin/me/ghisiluizgustavo/tournaments/controllers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,9 +119,54 @@
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql",
+      "mongo"
+    ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspaces\soccer\tournaments\src\main\kotlin\me\ghisiluizgustavo\tournaments\controllers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspaces\soccer" />
+    </key>
+    <key name="CreateKotlinClassDialog.RecentsKey">
+      <recent name="me.ghisiluizgustavo.tournaments.repositories" />
+      <recent name="me.ghisiluizgustavo.tournaments.services" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SoccerApiApplication">
+    <configuration name="SoccerApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.ghisiluizgustavo.soccerapi.SoccerApiApplication" />
+      <module name="soccer-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.ghisiluizgustavo.soccerapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TournamentsApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.ghisiluizgustavo.tournaments.TournamentsApplicationKt" />
+      <module name="tournaments.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SoccerApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="soccer-api" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="me.ghisiluizgustavo.soccerapi.SoccerApiApplication" />
@@ -96,6 +174,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TournamentsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tournaments.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="me.ghisiluizgustavo.tournaments.TournamentsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SoccerApiApplication" />
+        <item itemvalue="Kotlin.TournamentsApplicationKt" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,8 +211,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697315908221</updated>
-      <workItem from="1697315909245" duration="663000" />
+      <workItem from="1697315909245" duration="2891000" />
     </task>
+    <task id="LOCAL-00001" summary="(feat): starting tournaments ms, with Kotlin and Mongo">
+      <option name="closed" value="true" />
+      <created>1697319270697</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697319270697</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +237,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="(feat): starting tournaments ms, with Kotlin and Mongo" />
+    <option name="LAST_COMMIT_MESSAGE" value="(feat): starting tournaments ms, with Kotlin and Mongo" />
   </component>
   <component name="com.vaadin.designer2.intellij.settings.SizePresetsSettingsComponent">
     <option name="sizePresets">
